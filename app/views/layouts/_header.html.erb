@@ -1,0 +1,28 @@
+<header >
+  <nav id="navbar" class="navbar navbar-default" role="navigation">
+    <div  id="second_bar" class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div id="menu" class="navbar-header">
+        <%= link_to image_tag('logo.png'), root_path, class: 'navbar-brand'%>
+
+        <button type="button" class="navbar-toggle collapsed dropdown-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul id="nav-links" class="nav navbar-nav navbar-right">
+          <li><%= nav_link_to 'HOME', root_path %></li>
+          <li><%= nav_link_to 'ABOUT ME', about_path %></li>
+          <li><%= nav_link_to 'PORTFOLIO', portfolio_path %></li>
+          <li><%= nav_link_to 'PUBLICATIONS', publications_path %></li>
+          <li><%= nav_link_to 'CONTACT ME', new_contact_path, {:ignore_params => 'true'} %></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</header>

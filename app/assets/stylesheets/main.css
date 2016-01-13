@@ -1,0 +1,165 @@
+/* General Styling */
+body {
+  font-family: "Trebuchet MS", "Times New Roman", Arial, Times, serif;
+  position: relative;
+  width: 100%;
+  margin: 0%;
+}
+
+.alert {
+  position: absolute;
+  width: 97%;
+  top: 120px;
+  z-index: 30;
+  box-shadow: 0.5em 0 1em 5px #264348;
+  -moz-box-shadow: 0.5em 0 1em 5px #264348;
+  -webkit-box-shadow: 0.5em 0 1em 5px #264348;
+  -o-box-shadow: 0.5em 0 1em 5px #264348;
+}
+
+#navbar {
+  border: none;
+  margin-bottom: 0;
+}
+
+#nav-links a {
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+#nav-links a:hover, .selected {
+  background: #f5f5f5;
+}
+
+.selected {
+    border-bottom: 3px solid #869791;
+}
+
+.navbar-default {
+  background: none;
+}
+
+.navbar-brand {
+  padding: 6px 15px;
+}
+
+.nav li a:hover,
+.nav li a:focus {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* Home Page */
+
+#pictures {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+#pictures .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#pictures .owl-controls {
+  margin-top: -2em;
+}
+
+#pictures .owl-buttons {
+  background: #f5f5f5;
+  opacity: 0.7;
+}
+
+.intro {
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+
+.intro:hover {
+  cursor: pointer;
+  background: #d5d5d5;
+}
+
+#publication-slides .item{
+    background: #42bdc2;
+    padding: 10px;
+    margin: 5px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+/* Contact Page */
+
+#contact-page {
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+#form {
+  padding: 4em 1em;
+}
+
+#form-instructions {
+  font-size: 1em;
+}
+
+.contact-header {
+  color: #fff;
+  font-weight: bold;
+}
+
+#contact_comments {
+  height: 152px;
+  resize: none;
+  text-align: justify;
+}
+
+.transparent {
+  opacity: 0.8;
+}
+
+/* Login Page */
+#login-page {
+  padding: 6em;
+}
+
+/* Footer */
+#footer-row-2 {
+  text-align: center;
+}
+
+.footer {
+  bottom: 0;
+  padding: 2em 1em;
+  background: #222222;
+  color: #adadad;
+  margin-bottom: 0;
+}
+
+/*.footer h4 {*/
+  /*color: gray;*/
+/*}*/
+.footer a  {
+  color: #adadad;
+}
+
+.footer a:hover  {
+  text-decoration: none;
+}
+
+/* Media Queries */
+ @media (max-width: 770px) {
+  .alert {
+    width: 91%;
+  }
+}
