@@ -1,12 +1,10 @@
-<div class="row">
-  <div id="pictures" class="container-fluid owl-carousel owl-theme">
+  <div id="pictures" class="owl-carousel owl-theme">
     <div class="item" id="slide-3"><%= image_tag 'fullimage1.jpg', alt:'Slide1' %></div>
     <div class="item" id="slide-4"><%= image_tag 'fullimage2.jpg', alt:'Slide2' %></div>
     <div class="item" id="slide-5"><%= image_tag 'fullimage3.jpg', alt:'Slide3' %></div>
     <div class="item" id="slide-6"><%= image_tag 'fullimage4.jpg', alt:'Slide4' %></div>
     <div class="item" id="slide-6"><%= image_tag 'fullimage5.jpg', alt:'Slide5' %></div>
   </div>
-</div>
 
 <h1 class="text-center">John Olukunle, PhD<br>
   <small>
@@ -25,25 +23,31 @@
   </p>
   <br>
   <div class="row text-center">
-    <div class="col-sm-4 intro">
-      <h4>Who is John Olukunle?</h4>
-      <p class="text-justify">
-        Donec venenatis vulputate lorem.Morbi mattis ullamcorper velit. Quisque id odio. Aenean leo ligula, porttitor eu,
-        consequat vitae, eleifend ac, enim. Fusce ferme. Cras id dui.Phasellus accumsan cursus velit. Vivamus quis mi.
-      </p>
-    </div>
-    <div class="col-sm-4 intro">
-      <h4>Current Role</h4>
-      <p class="text-justify">
-        Morbi ac felis. Aenean imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-        Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Donec
-        mi odio, faucibus at, scelerisque quis, convallis in, nisi. Curabitur vestibulum aliquam leo.
-      </p>
-    </div>
-    <div class="col-sm-4 text-center">
-      <h4><i class="fa fa-file-pdf-o fa-lg"></i> Download my CV</h4>
-      <a href="" class="text-center"><%= image_tag 'cv-img.jpg' %></a>
-    </div>
+    <%= link_to(about_path) do %>
+      <div class="col-sm-4 intro">
+        <h4>Who is John Olukunle?</h4>
+        <p class="text-justify">
+          Donec venenatis vulputate lorem.Morbi mattis ullamcorper velit. Quisque id odio. Aenean leo ligula, porttitor eu,
+          consequat vitae, eleifend ac, enim. Fusce ferme. Cras id dui.Phasellus accumsan cursus velit. Vivamus quis mi.
+        </p>
+      </div>
+    <% end %>
+    <%= link_to portfolio_path do %>
+      <div class="col-sm-4 intro">
+        <h4>Current Role</h4>
+        <p class="text-justify">
+          Morbi ac felis. Aenean imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+          Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Donec
+          mi odio, faucibus at, scelerisque quis, convallis in, nisi. Curabitur vestibulum aliquam leo.
+        </p>
+      </div>
+    <% end %>
+    <%= link_to portfolio_path do %>
+      <div class="col-sm-4 text-center">
+        <h4><i class="fa fa-file-pdf-o fa-lg"></i> Download my CV</h4>
+        <%= image_tag 'cv-img.jpg' %>
+      </div>
+    <% end %>
   </div>
   <br>
   <div class="row text-center">
