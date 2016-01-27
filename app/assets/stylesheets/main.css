@@ -114,6 +114,19 @@ body {
     background: #869791;
     color: #fff;
     border-radius: 10px;
+    text-align: center;
+}
+
+.publication {
+    margin-bottom: 4em;
+    padding: 3em 4em;
+    box-shadow: 0.5em 0 1em 5px #869791;
+    -moz-box-shadow: 0.5em 0 1em 5px #869791;
+    -webkit-box-shadow: 0.5em 0 1em 5px #869791;
+    -o-box-shadow: 0.5em 0 1em 5px #869791;
+}
+
+.publications-list {
 }
 
 /* Contact Page */
